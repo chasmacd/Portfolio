@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <!-- Link our external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+
+    <!-- STARTER PORTFOLIO
+         Don't have a portfolio from Week 1? Use this one!
+         Replace everything in [square brackets] with your own info. -->
+
+    <!-- HEADER: name on the left, links on the right -->
+    <header>
+      <h1>[Your Name]</h1>
+      <nav>
+        <!-- href="#about" jumps to the element with id="about" -->
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-btn">Dark Mode</button>
+      </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <!-- Put your own photo in the images folder, then change src, e.g. src="images/me.jpg" -->
+        <img src="images/me.svg" alt="Photo of [Your Name]">
+        <div>
+          <p>
+            Hi! I'm [Your Name], a [year] studying [your major] at [your school]!
+          </p>
+          <p>
+            Right now I'm learning HTML, CSS and JavaScript, and I'm working toward
+            building my own app with React.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS: each li is styled as a "card" in styles.css -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>The site you're looking at! Built with HTML and CSS.</p>
+        </li>
+        <li class="project-card">
+          <h3>[My App] (coming soon)</h3>
+          <p>[One sentence about the app you'll build in this course.]</p>
+        </li>
+        <li class="project-card">
+          <h3>[Project Idea]</h3>
+          <p>[Something you'd like to build someday.]</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACT: footer = bottom of the page -->
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>Feel Free to Reach Out!</p>
+      <nav>
+        <a href="mailto:you@example.com">Email</a>
+        <!-- target="_blank" opens the link in a new tab -->
+        <a href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      </nav>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,124 @@
+/* ---------- Whole page ---------- */
+body {
+  font-family: Arial, sans-serif;  /* text font for everything inside body */
+  background-color: #f7f7f7;
+  color: #222222;
+  margin: 0;                       /* remove the browser's default space */
+}
+
+/* ---------- Header + nav ---------- */
+header {
+  display: flex;                   /* lay out the h1 and nav in a row */
+  justify-content: space-between;  /* name on the left, links on the right */
+  align-items: center;             /* line them up vertically */
+  padding: 20px 40px;
+  background-color: #222222;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;                       /* space between links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;           /* remove the underline */
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffb3c7;                  /* changes color when the mouse is over it */
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 40px;                   /* space between the section edge and its children */
+  max-width: 900px;
+  margin: 0 auto;                  /* center the section on the page */
+}
+
+h2 {
+  border-bottom: 2px solid #222222;
+  padding-bottom: 8px;
+}
+
+/* ---------- About ---------- */
+.about-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.about-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;              /* 50% makes a circle */
+}
+
+/* ---------- Projects ---------- */
+.project-list {
+  list-style: none;                /* remove the bullet points */
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  flex: 1;                         /* each card grows to share the space equally */
+  background-color: white;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+/* ---------- Contact / footer ---------- */
+footer {
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+footer h2 {
+  border-bottom: none;
+}
+
+footer nav {
+  justify-content: center;         /* center the links */
+}
+
+#theme-btn {
+  font: inherit;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20 px;
+  padding 6px 12 px;
+  cursor: pointer;
+}
+
+body.dark
+ {
+  background-color: #121212;
+  color: #eeeeee
+ }
+
+ body.dark .project-card {
+  background-color: #1e1e1e;
+  border-color: #444444;
+}
+
+body.dark h2 {
+  border-bottom-color: #eeeeee;
+}
+
